@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "saying_hello"
+name = "say_hello"
 version = "0.1.0"
 description = "A simple module to display hello world message"
 authors = ["Donny Mbaga"]

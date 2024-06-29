@@ -1,7 +1,6 @@
 
-import sys 
 
-def saying_hello(user_name=None):
+def say_hello(user_name):
   """
     This function accept user_name and returns 
        `Hello, {user_name},  nice to meet you!"
@@ -10,14 +9,14 @@ def saying_hello(user_name=None):
        `Hello World, you're welcome!"
 
     Example
-    >>> saying_hello("Doni Mbaga")
+    >>> say_hello("Doni Mbaga")
     >>> Hello, Doni Mbaga, nice to meet you!
-    >>> saying_hello()
+    >>> say_hello()
     >>> Hello World, nice to meet you!
   """
+  message = "Hello, " + user_name + ", " + "nice to meet you!"
+  return message
 
-  if (user_name==None):
-    return "Hello World, nice to meet you!"
-  else:
-    return "Hello, " + user_name + ", " + "nice to meet you!"
-
+print(say_hello())
+print(say_hello("Doni"))
+print(say_hello("Doni", "Mbaga"))
